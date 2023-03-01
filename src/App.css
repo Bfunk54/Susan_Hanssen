@@ -1,0 +1,17 @@
+html, body {
+    width: auto;
+}
+
+@media screen and (max-height: 800px) {
+    html {
+    min-height: auto;
+    }
+}
+
+body, #app, app>div, #root {
+    background-color: transparent !important;
+}
+
+html {
+    background-color:rgb(48, 48, 48);
+}

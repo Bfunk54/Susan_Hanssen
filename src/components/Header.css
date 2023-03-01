@@ -1,0 +1,66 @@
+.navbar-toggler {
+    border: none !important;
+}
+
+li {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        width: 98% !important;
+        height: 120% !important;
+    }
+    .home {
+        margin-top: 20px;
+    }
+    .navbar-brand {
+        margin-right: -16px !important;
+    }
+    .nav-item {
+        margin-right: 0px !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .nav-item {
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .nav-item {
+        margin-bottom: 10px;
+    }
+    .home {
+        margin-left: -20px;
+    }
+    .btn {
+        margin-right: -36px;
+    }
+}
+
+@media screen and (min-width: 1012px) {
+    .home {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (min-width: 1022px) {
+    .home {
+        margin-left: 0px;
+    }
+    .btn {
+        margin-right: -24px;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .nav-item {
+        margin-bottom: 12px;
+        margin-right: 0px !important;
+    }
+    .logo {
+        height: 90px !important;
+    }
+}

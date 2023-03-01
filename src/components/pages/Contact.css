@@ -1,0 +1,39 @@
+@media screen and (max-width: 1800px) {
+    .labels {
+        width: 14% !important;
+    }
+    .contact {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .labels {
+        width: 18% !important;
+    }
+    .contact {
+        margin-top: 20px;
+        padding-top: 2px;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .labels {
+        width: 26% !important;
+    }
+    .contact {
+        padding-top: 6px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .contact {
+        margin-top: 0;
+    }
+
+    .lastBtn {
+        margin-bottom: 10px !important;
+        height: fit-content;
+    }
+
+}

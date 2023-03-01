@@ -1,0 +1,243 @@
+.cubeContainer {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+.about-me {
+    height: 200px;
+    margin-top: 70px;
+    margin-left: 80px;
+    margin-bottom: -20px;
+}
+
+.home {
+    padding-top: 125px;
+    width: 100%;
+}
+
+.special {
+    text-align: center;
+    margin-bottom: 25px;
+    width: 20%;
+    height: 40px;
+    background-color: rgba(245, 245, 245, 0.5) !important; 
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.tech {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 30%;
+    height: 40px;
+    background-color: rgba(245, 245, 245, 0.5) !important; 
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.likewhat {
+    height: 70px ;
+    width: 15% ;
+    margin-top: 29px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    text-align: center;
+    margin-right: 20px;
+    background-color: rgba(245, 245, 245, 0.5) !important; 
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.contactMe {
+    margin-top: 22px;
+    height: 40px ;
+}
+
+.portfolio-block {
+    display: flex !important;
+    align-items: center !important;
+}
+
+.btn {
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 0 !important;
+    border: none;
+    transition:all 0.3s ease 0s;
+}
+.btn:hover,
+.btn.active:hover{
+    color: #ffffff;
+}
+.btn:before{
+    content: "";
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color:  rgba(255, 58, 3, 0.698) !important;
+    width: 30%;
+    height: 3px;
+    transition:all 0.3s ease 0s;
+}
+.btn:after{
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+    background-color:  rgba(255, 58, 3, 0.698) !important;
+    width: 30%;
+    height: 3px;
+    transition:all 0.3s ease 0s;
+}
+.btn:hover:before,
+.btn:hover:after,
+.btn.active:before,
+.btn.active:after{
+    width: 100%;
+    background-color:rgba(255, 152, 17, 0.696) !important;
+}
+
+.btn-bd-primary {
+    font-weight: 600!important;
+    color: white !important;
+    background-color:rgb(34, 34, 34) !important;
+    border-color: rgb(72, 72, 72) !important;
+    border-radius: .5rem !important;
+  }
+
+  .btn-bd-primary:hover {
+    color: white !important;
+    background-color:  rgba(255, 58, 3, 0.698) !important;
+    border-color: rgba(255, 58, 3, 0.698) !important;
+  }
+  .btn-bd-primary:active {
+    color: white !important;
+    background-color: rgba(3, 255, 255, 0.243)  !important;
+    border-color:  rgba(3, 255, 255, 0.288)  !important;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .likewhat {
+        
+    }
+    .stage-cube-cont {
+        
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .special {
+        width: 36%;
+        height: 36px;
+    }
+    .tech {
+        height: 72px;
+    }
+    .likewhat {
+        height: 70px ;
+        width: 22% ;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .likewhat {
+        height: 70px ;
+        width: 22% ;
+    }
+    .tech {
+        width: 48%;
+        height: 40px;
+    }
+    .fullStack {
+        height: 80px ;
+    }
+    .about-me {
+        margin-left: 120px ;
+        margin-bottom: 110px ;
+    }
+    .stage-cube-cont {
+        right: 40px ;
+        top: 230px;
+        width: 80%;
+    }
+  }
+
+  @media screen and (max-width: 575px){
+    .btn {
+        margin-bottom: 50px !important;
+    }
+    .contactMe {
+        margin-bottom: 0px !important;
+    }
+    /* .stage-cube-cont {
+        right: 0px;
+        top: 200px;
+        width: 600px;
+    } */
+}
+@media screen and (max-width: 525px){
+.stage-cube-cont {
+    padding-left: 260px;
+    top: 250px;
+    width: 600px;
+}
+}
+
+@media screen and (max-width: 465px){
+    .stage-cube-cont {
+        padding-left: 340px;
+    top: 250px;
+    width: 600px;
+    }
+    .about-me {
+        margin-left: 90px ;
+        margin-bottom: 110px ;
+    }
+    .likewhat {
+        height: 70px ;
+        width: 42% ;
+    }
+    }
+
+  @media screen and (max-width: 300px) {
+    .likewhat {
+        height: 70px ;
+        width: 22% ;
+    }
+    .tech {
+        width: 48% ;
+        height: 40px ;
+    }
+    .fullStack {
+        width: 78% ;
+    }
+    .about-me {
+        margin-left: 70px ;
+        margin-bottom: 110px ;
+    }
+    .stage-cube-cont {
+        right: 80px ;
+        top: 180px;
+        width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 300px) {
+    .likewhat {
+        height: 60px ;
+        width: 40% ;
+    }
+    .contactMe {
+        margin-top: 20px;
+    }
+    .special {
+        width: 44% ;
+        height: 38px ;
+        padding-top: 2px ;
+    }
+    .tech {
+        width: 58% ;
+        height: 36px ;
+        padding-top: 2px ;
+    }
+  }

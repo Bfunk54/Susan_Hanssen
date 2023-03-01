@@ -1,0 +1,62 @@
+{
+  "name": "susan_hanssen",
+  "version": "0.1.0",
+  "homepage": "https://susanhanssen.com",
+  "private": true,
+  "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@fortawesome/free-brands-svg-icons": "^6.2.1",
+    "@fortawesome/free-solid-svg-icons": "^6.2.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.11",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^13.5.0",
+    "axios": "^1.2.0",
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2",
+    "dotenv": "^16.0.3",
+    "emailjs": "^4.0.1",
+    "gh-pages": "^4.0.0",
+    "hamburger-react": "^2.5.0",
+    "mdb-react-ui-kit": "5.0.0",
+    "react": "18.1.0",
+    "react-bootstrap": "^2.7.0",
+    "react-dom": "18.1.0",
+    "react-icons": "^4.7.1",
+    "react-inner-image-zoom": "^3.0.2",
+    "react-loaders": "^3.0.1",
+    "react-router-dom": "^6.8.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build": "react-scripts build && cp build/index.html build/404.html"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
