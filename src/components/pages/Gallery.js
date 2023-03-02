@@ -193,15 +193,15 @@ export default function Gallery() {
                 style={{ marginBottom: 26 }}
                 className="col-md-6 col-lg-4 project-sidebar-card"
               >
-                <Card onClick={(event) => handleImageClick(event, image)} bg="light" border="secondary">
-                  <img src={image.image} />
+                <Card onClick={(event) => handleImageClick(event, image)} bg="dark" border="none" style={{borderRadius: '20px'}}>
+                  <img src={image.image} style={{borderTopLeftRadius: '20px', borderTopRightRadius: '20px'}} />
 
-                  <Card.Header style={{ textAlign: 'center', fontSize: "16px" }}>
+                  <Card.Header style={{ textAlign: 'center', fontSize: "16px", color: 'white' }}>
                     Sample Title
                   </Card.Header>
                   <Card.Body>
-                    <Card.Text style={{ textAlign: 'center', fontSize: "14px" }}>
-                      This is sample text.
+                    <Card.Text style={{ textAlign: 'center', fontSize: "14px", color: 'white' }}>
+                      This is a sample caption.
                     </Card.Text>
                   </Card.Body>
                 </Card>
