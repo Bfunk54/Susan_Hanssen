@@ -1,0 +1,9 @@
+.resumeContainer{
+  padding-top: 180px;
+}
+
+@media screen and (max-width: 769px) {
+  .resumeContainer{
+    padding-top: 210px;
+  }
+}

@@ -1,49 +1,49 @@
 import React, { useState } from "react";
 import Nav from "./Header";
 import Home from "./pages/Home";
-import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume";
+import Gallery from "./pages/Gallery";
+import Bio from "./pages/Bio";
+import Statement from "./pages/Statement";
 import Contact from "./pages/Contact";
-import Footer from "./Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function PortfolioContainer() {
-  var background = {
+  // var background = {
 
-  };
+  // };
 
-  const [currentPage, setCurrentPage] = useState("Home");
+  // const [currentPage, setCurrentPage] = useState("Home");
 
-  const renderPage = () => {
-    if (currentPage === "Home") {
-      return <Home />;
-    }
-    if (currentPage === "Portfolio") {
-      return <Portfolio />;
-    }
-    if (currentPage === "Resume") {
-      return <Resume />;
-    }
-    return <Contact />;
-  };
+  // // const renderPage = () => {
+  // //   if (currentPage === "Home") {
+  // //     return <Home />;
+  // //   }
+  // //   if (currentPage === "Portfolio") {
+  // //     return <Portfolio />;
+  // //   }
+  // //   if (currentPage === "Resume") {
+  // //     return <Resume />;
+  // //   }
+  // //   return <Contact />;
+  // // };
 
-  const handlePageChange = (page) => setCurrentPage(page);
+  // const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <Router>
-      <div style={background}>
-        <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+      <div>
+        <Nav/>
         <main >
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/bio" element={<Bio />} />
+            <Route path="/statement" element={<Statement />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
-        <Footer />
       </div>
     </Router>
   );

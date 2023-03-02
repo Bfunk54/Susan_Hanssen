@@ -117,7 +117,7 @@ function Nav() {
               className="nav-item navbar-toggler"
             >
               <Link
-                to="/portfolio"
+                to="/gallery"
                 style={{ color: "white", textDecoration: "none", fontSize: 18 }}
                 onClick={() => {
                   setOpen(open => !open);
@@ -130,10 +130,10 @@ function Nav() {
                   data-bs-target=".navbar-collapse.show"
                   type="button"
                 >
-                  Portfolio
+                  Gallery
                 </button>
                 ) : (
-                  <button className="btn btn-bd-primary btn">Portfolio</button>
+                  <button className="btn btn-bd-primary btn">Gallery</button>
                   )}
               </Link>
             </li>
@@ -146,7 +146,7 @@ function Nav() {
               className="nav-item navbar-toggler"
             >
               <Link
-                to="/resume"
+                to="/bio"
                 style={{ color: "white", textDecoration: "none", fontSize: 18 }}
                 onClick={() => {
                   setOpen(open => !open);
@@ -159,10 +159,39 @@ function Nav() {
                   data-bs-target=".navbar-collapse.show"
                   type="button"
                 >
-                  Resume
+                  Bio
                 </button>
                 ) : (
-                  <button className="btn btn-bd-primary btn">Resume</button>
+                  <button className="btn btn-bd-primary btn">Bio</button>
+                  )}
+              </Link>
+            </li>
+            <li
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginRight: "10px",
+              }}
+              className="nav-item navbar-toggler"
+            >
+              <Link
+                to="/statement"
+                style={{ color: "white", textDecoration: "none", fontSize: 18 }}
+                onClick={() => {
+                  setOpen(open => !open);
+                }}
+              >
+               {isMobile ? (
+                <button
+                  className="btn btn-bd-primary btn"
+                  data-bs-toggle="collapse"
+                  data-bs-target=".navbar-collapse.show"
+                  type="button"
+                >
+                  Statement
+                </button>
+                ) : (
+                  <button className="btn btn-bd-primary btn">Statement</button>
                   )}
               </Link>
             </li>
