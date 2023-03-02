@@ -1,6 +1,40 @@
 import React, {useState} from "react";
 import Card from "react-bootstrap/Card";
-import sample from "../img/portfolio/sample.jpg";
+import img1 from "../img/gallery/1.jpeg";
+import img2 from "../img/gallery/2.jpg";
+import img3 from "../img/gallery/3.jpg";
+import img4 from "../img/gallery/4.jpg";
+import img5 from "../img/gallery/5.jpg";
+import img6 from "../img/gallery/6.jpg";
+import img7 from "../img/gallery/7.jpg";
+import img8 from "../img/gallery/8.png";
+import img9 from "../img/gallery/9.jpg";
+import img10 from "../img/gallery/10.jpg";
+import img11 from "../img/gallery/11.jpeg";
+import img12 from "../img/gallery/12.jpg";
+import img13 from "../img/gallery/13.jpg";
+import img14 from "../img/gallery/14.jpg";
+import img15 from "../img/gallery/15.jpg";
+import img16 from "../img/gallery/16.jpeg";
+import img17 from "../img/gallery/17.png";
+import img18 from "../img/gallery/18.jpg";
+import img19 from "../img/gallery/19.jpg";
+import img20 from "../img/gallery/20.jpg";
+import img21 from "../img/gallery/21.jpg";
+import img22 from "../img/gallery/22.jpg";
+import img23 from "../img/gallery/23.jpg";
+import img24 from "../img/gallery/24.jpg";
+import img25 from "../img/gallery/25.jpg";
+import img26 from "../img/gallery/26.webp";
+import img27 from "../img/gallery/27.webp";
+import img28 from "../img/gallery/28.jpg";
+import img29 from "../img/gallery/29.jpg";
+import img30 from "../img/gallery/30.jpg";
+import img31 from "../img/gallery/31.jpg";
+import img32 from "../img/gallery/32.jpg";
+import img33 from "../img/gallery/33.jpg";
+import img34 from "../img/gallery/34.jpg";
+import img35 from "../img/gallery/35.jpg";
 
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 import Popover from "@mui/material/Popover";
@@ -16,7 +50,43 @@ import "./Home.css";
 import "./Gallery.css";
 
 export default function Gallery() {
-  const images = [{ id: 1, image: sample }, { id: 2, image: sample2 }];
+  const images = [
+    { id: 1, image: img1 }, 
+    { id: 2, image: img2 },
+    { id: 3, image: img3 },
+    { id: 4, image: img4 },
+    { id: 5, image: img5 },
+    { id: 6, image: img6 },
+    { id: 7, image: img7 },
+    { id: 8, image: img8 },
+    { id: 9, image: img9 },
+    { id: 10, image: img10 },
+    { id: 11, image: img11 },
+    { id: 12, image: img12 },
+    { id: 13, image: img13 },
+    { id: 14, image: img14 },
+    { id: 15, image: img15 },
+    { id: 16, image: img16 },
+    { id: 17, image: img17 },
+    { id: 18, image: img18 },
+    { id: 19, image: img19 },
+    { id: 20, image: img20 },
+    { id: 21, image: img21 },
+    { id: 22, image: img22 },
+    { id: 23, image: img23 },
+    { id: 24, image: img24 },
+    { id: 25, image: img25 },
+    { id: 26, image: img26 },
+    { id: 27, image: img27 },
+    { id: 28, image: img28 },
+    { id: 29, image: img29 },
+    { id: 30, image: img30 },
+    { id: 31, image: img31 },
+    { id: 32, image: img32 },
+    { id: 33, image: img33 },
+    { id: 34, image: img34 },
+    { id: 35, image: img35 }
+  ];
   const imageAmount = images.length - 1;
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [theImage, setTheImage] = React.useState([]);
@@ -146,8 +216,7 @@ export default function Gallery() {
               anchorReference={"none"}
               BackdropProps={{
                 style: {
-                  backgroundColor: "transparent",
-                  boxShadow: "none"
+                  backgroundColor: "rgba(38, 38, 38, 0.55)"
                 },
               }}
               sx={{
@@ -159,34 +228,17 @@ export default function Gallery() {
                 height: "100vh"
               }}
             >
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "center",
-                  height: '88vh',
-                  width: "100%",
-                  backgroundColor: "rgba(38, 38, 38, 0.55)",
-                  borderTopLeftRadius: '20px',
-                  borderTopRightRadius: '20px',
-                  position: 'relative'
-                }}
-              >
-              
-                  <img
-                    src={theImage.image}
-                    style={{ maxHeight: '100%', width: '100%'}}
-                  />
-                  {/* Close Icon */}
-                  <Button
-                  sx={{ margin: '10px', padding: 0, maxWidth: "36px", minWidth: "36px", position: 'absolute', alignSelf: 'flex-start' }}
+              <div>
+              {/* Close Icon */}
+              <Button
+                  sx={{ margin: '10px', padding: 0, maxWidth: "36px", minWidth: "36px", right: '5px', top: '5px', position: 'absolute' }}
                   onClick={handleClose}
                 >
                   <CloseIcon sx={{ fontSize: 36 }} />
                 </Button>
               {!isMobile ? (
                 <NextButtons
-                  sx={{ marginRight: 3, height: 38.5, left: '10px', position: 'absolute', display: prevBtn }}
+                  sx={{ marginRight: 3, height: 38.5, left: '40px', top: '300px', position: 'absolute', display: prevBtn }}
                   onClick={(event) => handlePreviousClick(event, theImage)}
                 >
                   <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
@@ -194,7 +246,7 @@ export default function Gallery() {
                 </NextButtons>
               ) : (
                 <NextButtons
-                  sx={{ marginRight: 3, position: 'absolute', left: '10px', height: 38.5, display: prevBtn }}
+                  sx={{ marginRight: 3, position: 'absolute', left: '40px', top: '300px', height: 38.5, display: prevBtn }}
                   onClick={(event) => handlePreviousClick(event, theImage)}
                 >
                   <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
@@ -202,11 +254,27 @@ export default function Gallery() {
                 </NextButtons>
               )}
               <NextButtons
-                sx={{ marginLeft: 3, height: 38.5, right: '10px', position: 'absolute', display: nextBtn }}
+                sx={{ marginLeft: 3, height: 38.5, right: '40px', top: '300px', position: 'absolute', display: nextBtn }}
                 onClick={(event) => handleNextClick(event, theImage)}
               >
                 Next<ArrowForwardIosIcon fontSize="small"></ArrowForwardIosIcon>
               </NextButtons>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "flex-end",
+                  alignItems: "center",
+                  height: '78vh',
+                  maxWidth: "64vw",
+                  position: 'relative',
+                  marginTop: '10px'
+                }}
+              >
+              
+                  <img
+                    src={theImage.image}
+                    style={{ maxHeight: '100%', width: '100%' }}
+                  />
                   </div>
                   <div>
               <Typography
@@ -214,20 +282,27 @@ export default function Gallery() {
                 sx={{
                   textAlign: "center",
                   color: 'white',
-                  width: "420px",
-                  borderRadius: "20px",
                   margin: 0,
                   padding: 2,
-                  "@media (max-width: 770px)": {
-                    width: "180px",
-                  },
-                  "@media (max-width: 525px)": {
-                    width: "140px",
-                  },
+                  width: '100%'
                 }}
               >
                 Sample Name
               </Typography>
+              <Typography
+                variant="p"
+                sx={{
+                  textAlign: "center",
+                  color: 'white',
+                  margin: 0,
+                  padding: 2,
+                  width: '100%',
+                  display: 'block'
+                }}
+              >
+                Sample Caption
+              </Typography>
+              </div>
               </div>
             </Popover>
           </div>

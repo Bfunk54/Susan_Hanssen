@@ -12,12 +12,7 @@
     align-items: center;
     justify-content: center;
     height: auto;
-  }
-  
-  .MuiBackdrop-root {
-    background: rgba(255, 255, 255, 0) !important;
-    -webkit-backdrop-filter: blur(0px) !important;
-    backdrop-filter: blur(0px) !important;
+    width: 100%;
   }
 
 @media screen and (max-width: 1200px) {
