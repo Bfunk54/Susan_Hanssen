@@ -36,7 +36,6 @@ import img33 from "../img/gallery/33.jpg";
 import img34 from "../img/gallery/34.jpg";
 import img35 from "../img/gallery/35.jpg";
 
-import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
 import Popover from "@mui/material/Popover";
 import CloseIcon from "@mui/icons-material/Close";
 import Button from "@mui/material/Button";
@@ -166,7 +165,7 @@ export default function Gallery() {
   });
 
   return (
-    <div style={{ margin: "auto" }}>
+    <div style={{ margin: "auto", marginTop: '-60px' }}>
       <section className="portfolio-block projects-with-sidebar portfolio">
         <div className="container">
           <div className="heading">
