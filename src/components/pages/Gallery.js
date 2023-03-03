@@ -51,41 +51,41 @@ import "./Gallery.css";
 
 export default function Gallery() {
   const images = [
-    { id: 1, image: img1 }, 
-    { id: 2, image: img2 },
-    { id: 3, image: img3 },
-    { id: 4, image: img4 },
-    { id: 5, image: img5 },
-    { id: 6, image: img6 },
-    { id: 7, image: img7 },
-    { id: 8, image: img8 },
-    { id: 9, image: img9 },
-    { id: 10, image: img10 },
-    { id: 11, image: img11 },
-    { id: 12, image: img12 },
-    { id: 13, image: img13 },
-    { id: 14, image: img14 },
-    { id: 15, image: img15 },
-    { id: 16, image: img16 },
-    { id: 17, image: img17 },
-    { id: 18, image: img18 },
-    { id: 19, image: img19 },
-    { id: 20, image: img20 },
-    { id: 21, image: img21 },
-    { id: 22, image: img22 },
-    { id: 23, image: img23 },
-    { id: 24, image: img24 },
-    { id: 25, image: img25 },
-    { id: 26, image: img26 },
-    { id: 27, image: img27 },
-    { id: 28, image: img28 },
-    { id: 29, image: img29 },
-    { id: 30, image: img30 },
-    { id: 31, image: img31 },
-    { id: 32, image: img32 },
-    { id: 33, image: img33 },
-    { id: 34, image: img34 },
-    { id: 35, image: img35 }
+    { id: 1, image: img1, title: 'The Messenger', size: '18x28', mode: 'Gouache', sold: 'SOLD' }, 
+    { id: 2, image: img2, title: 'Dear Prudence', size: '38x57', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 3, image: img3, title: 'The Fateful Choice', size: '36x60', mode: 'Acrylic on Canvas', sold: 'SOLD' },
+    { id: 4, image: img4, title: 'Harebrained', size: '30x40', mode: 'Acrylic on Canvas', sold: 'SOLD' },
+    { id: 5, image: img5, title: 'Feeling What I Can Not See', size: '36x48', mode: 'Acrylic on Canvas', sold: 'SOLD' },
+    { id: 6, image: img6, title: 'The Joy Ride', size: '30x40', mode: 'Acrylic on Canvas', sold: 'SOLD' },
+    { id: 7, image: img7, title: 'The Red Veil', size: '28x20', mode: 'Watercolor', sold: 'SOLD' },
+    { id: 8, image: img8, title: 'Grace and the Two Napoleons', size: '22x30', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
+    { id: 9, image: img9, title: 'The Dress Up', size: '22x30', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
+    { id: 10, image: img10, title: 'Bird Feed', size: '22x30', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
+    { id: 11, image: img11, title: 'Birds of a Feather', size: '20x16', mode: 'Watercolor', sold: '' },
+    { id: 12, image: img12, title: 'The Disguise', size: '36x48', mode: 'Acrylic on Canvas', sold: 'SOLD' },
+    { id: 13, image: img13, title: 'The Visit', size: '36x48', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 14, image: img14, title: 'Sitting with Keith', size: '40x36', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 15, image: img15, title: 'The Unfamiliar Walk', size: '36x48', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 16, image: img16, title: 'Rush', size: '18x26', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
+    { id: 17, image: img17, title: 'Stars and Stripes and Christmas Tree Lights', size: '22x30', mode: 'Watercolor', sold: '' },
+    { id: 18, image: img18, title: 'Going Forward', size: '21x22', mode: 'Gouache', sold: 'SOLD' },
+    { id: 19, image: img19, title: 'Out of the Everything into the Here', size: '36x48', mode: 'Acrylic', sold: '' },
+    { id: 20, image: img20, title: 'The Red Coat', size: '30x40', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 21, image: img21, title: 'Something Is Going On', size: '30x40', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 22, image: img22, title: 'The Hatter', size: '24x36', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 23, image: img23, title: 'The Monstrous Wish', size: '24x36', mode: 'Acrylic on Canvas', sold: '' },
+    { id: 24, image: img24, title: 'The White Truck', size: '24x37', mode: 'Acrylic on Canvas', sold: 'SOLD' },
+    { id: 25, image: img25, title: 'Rebecca', size: '28x37', mode: 'Acrylic on Canvas', sold: 'SOLD' },
+    { id: 26, image: img26, title: 'In or Out', size: '22x30', mode: 'Watercolor', sold: 'SOLD' },
+    { id: 27, image: img27, title: 'About Face', size: '20x20', mode: 'Watercolor/Charcoal', sold: '' },
+    { id: 28, image: img28, title: 'Baa Baa Black Sheep', size: '22x30', mode: 'Watercolor/Charcoal', sold: '' },
+    { id: 29, image: img29, title: 'Carbon Compound', size: '23x31', mode: 'Watercolor/Acrylic', sold: '' },
+    { id: 30, image: img30, title: 'Into the Ether', size: '18x23', mode: 'Gouache on Monoprint', sold: '' },
+    { id: 31, image: img31, title: 'Topless in Space', size: '16x20', mode: 'Gouache on Monoprint', sold: 'SOLD' },
+    { id: 32, image: img32, title: 'The Odd Sunset', size: '16x20', mode: 'Gouache on Monoprint', sold: 'SOLD' },
+    { id: 33, image: img33, title: 'The Broken Life Saver', size: '27x33', mode: 'Watercolor/Collage', sold: '' },
+    { id: 34, image: img34, title: 'Shark Fin Soup', size: '12x16', mode: 'Gouache/Collage', sold: '' },
+    { id: 35, image: img35, title: 'Egg Drop Soup', size: '12x16', mode: 'Gouache/Collage', sold: '' }
   ];
   const imageAmount = images.length - 1;
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -193,15 +193,17 @@ export default function Gallery() {
                 style={{ marginBottom: 26 }}
                 className="col-md-6 col-lg-4 project-sidebar-card"
               >
-                <Card onClick={(event) => handleImageClick(event, image)} bg="dark" border="none" style={{borderRadius: '20px'}}>
+                <Card onClick={(event) => handleImageClick(event, image)} bg="dark" border="none" style={{borderRadius: '20px', cursor: 'pointer'}}>
                   <img src={image.image} style={{borderTopLeftRadius: '20px', borderTopRightRadius: '20px'}} />
 
                   <Card.Header style={{ textAlign: 'center', fontSize: "16px", color: 'white' }}>
-                    Sample Title
+                    {image.title}
                   </Card.Header>
                   <Card.Body>
                     <Card.Text style={{ textAlign: 'center', fontSize: "14px", color: 'white' }}>
-                      This is a sample caption.
+                    {image.size} <br/>
+                    {image.mode} <br/>
+                    {image.sold}
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -283,11 +285,11 @@ export default function Gallery() {
                   textAlign: "center",
                   color: 'white',
                   margin: 0,
-                  padding: 2,
+                  padding: 1,
                   width: '100%'
                 }}
               >
-                Sample Name
+                {theImage.title}
               </Typography>
               <Typography
                 variant="p"
@@ -295,12 +297,14 @@ export default function Gallery() {
                   textAlign: "center",
                   color: 'white',
                   margin: 0,
-                  padding: 2,
                   width: '100%',
+                  fontSize: '15px',
                   display: 'block'
                 }}
               >
-                Sample Caption
+                Size: {theImage.size} <br/>
+                   Medium: {theImage.mode} <br/>
+                    {theImage.sold}
               </Typography>
               </div>
               </div>
