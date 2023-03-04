@@ -2,8 +2,27 @@
   padding-top: 180px;
 }
 
+.years {
+  text-align: left;
+  background-color: rgba(28, 28, 28, 0.75);
+          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px);
+          width: 64px;
+          height: 34px;
+          padding-left: 7px;
+          border-radius: 20px;
+          display: block;
+          font-size: 22px;
+}
+
 @media screen and (max-width: 769px) {
   .resumeContainer{
     padding-top: 210px;
   }
 }
+
+@media screen and (max-width: 548px){
+  .bio {
+      margin-top: 160px !important;
+  }
+  }

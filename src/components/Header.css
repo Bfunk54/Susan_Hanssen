@@ -6,7 +6,7 @@ li {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 548px) {
     .logo {
         width: 98% !important;
         height: 120% !important;
@@ -16,9 +16,14 @@ li {
     }
     .navbar-brand {
         margin-right: -16px !important;
+        display: flex;
+        justify-content: center;
     }
     .nav-item {
         margin-right: 0px !important;
+    }
+    .text {
+        padding-top: 6px;
     }
 }
 

@@ -7,3 +7,9 @@
     padding-top: 210px;
   }
 }
+
+@media screen and (max-width: 548px){
+  .statement {
+      margin-top: 160px !important;
+  }
+  }

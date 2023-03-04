@@ -47,7 +47,7 @@ function Nav() {
       >
           <a
             className="navbar-brand logo"
-            style={{ fontSize: "34px", color: "black", fontWeight: 500 }}
+            style={{ fontSize: "34px", color: "black", paddingTop: '10px', fontWeight: 500 }}
             href="#"
           >
             {/* <img
@@ -55,7 +55,22 @@ function Nav() {
               className="logo"
               src={Logo}
             /> */}
+            <div
+            className= 'text'
+        style={{
+          textAlign: "center",
+          width: "290px",
+          height: "46px",
+          backgroundColor: "rgba(28, 28, 28, 0.4)",
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
+          borderRadius: "20px",
+          marginBottom: "10px",
+          alignSelf: "flex-start"
+        }}
+      >
             <h1 style={{color: 'white'}}>Susan Hanssen</h1>
+            </div>
           </a>
         <button
           style={{ marginTop: "-25px", textDecoration: "none", marginTop: 0 }}

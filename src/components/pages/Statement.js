@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 export default function Statement() {
   return (
     <div
-      className="container"
+      className="container statement"
       style={{
         marginTop: "100px",
         color: "white",
@@ -16,13 +16,12 @@ export default function Statement() {
       }}
     >
       <div
-        className="recent"
         style={{
           textAlign: "center",
           marginBottom: "10px",
-          width: "28%",
+          width: "32%",
           height: "40px",
-          backgroundColor: "rgba(28, 28, 28, 0.55)",
+          backgroundColor: "rgba(28, 28, 28, 0.75)",
           backdropFilter: "blur(20px)",
           WebkitBackdropFilter: "blur(20px)",
           borderRadius: "20px",
@@ -32,7 +31,20 @@ export default function Statement() {
       >
         <h2>Artist's Statement</h2>
       </div>
-      <div style={{ width: "92%" }}>
+      <div
+              style={{
+                marginBottom: "10px",
+                width: "92%",
+                padding: "20px",
+                backgroundColor: "rgba(28, 28, 28, 0.45)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+                borderRadius: "20px",
+                marginBottom: '20px',
+                alignSelf: 'center',
+                textAlign: 'center'
+              }}
+            >
         <Typography style={{ fontSize: "16px" }} variant="p">
           My paintings reflect experiences, feelings and thoughts from life’s
           events. For the most part, the ideas I work with are conundrums; the

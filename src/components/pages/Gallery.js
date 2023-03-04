@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-import Card from "react-bootstrap/Card";
 import img1 from "../img/gallery/1.jpeg";
 import img2 from "../img/gallery/2.jpg";
 import img3 from "../img/gallery/3.jpg";
@@ -36,6 +35,7 @@ import img33 from "../img/gallery/33.jpg";
 import img34 from "../img/gallery/34.jpg";
 import img35 from "../img/gallery/35.jpg";
 
+import Card from "react-bootstrap/Card";
 import Popover from "@mui/material/Popover";
 import CloseIcon from "@mui/icons-material/Close";
 import Button from "@mui/material/Button";
@@ -165,7 +165,7 @@ export default function Gallery() {
   });
 
   return (
-    <div style={{ margin: "auto", marginTop: '-60px' }}>
+    <div className="gallery" style={{ margin: "auto", marginTop: '-60px' }}>
       <section className="portfolio-block projects-with-sidebar portfolio">
         <div className="container">
           <div className="heading">
@@ -176,7 +176,7 @@ export default function Gallery() {
                 marginBottom: "10px",
                 width: "20%",
                 height: "40px",
-                backgroundColor: "rgba(28, 28, 28, 0.55)",
+                backgroundColor: "rgba(28, 28, 28, 0.75)",
                 backdropFilter: "blur(20px)",
                 WebkitBackdropFilter: "blur(20px)",
                 borderRadius: "20px",
@@ -229,7 +229,7 @@ export default function Gallery() {
                 height: "100vh"
               }}
             >
-              <div>
+              <div style={{height: '100vh'}}>
               {/* Close Icon */}
               <Button
                   sx={{ margin: '10px', padding: 0, maxWidth: "36px", minWidth: "36px", right: '5px', top: '5px', position: 'absolute' }}
@@ -298,7 +298,8 @@ export default function Gallery() {
                   margin: 0,
                   width: '100%',
                   fontSize: '15px',
-                  display: 'block'
+                  display: 'block',
+                  marginBottom: '6px',
                 }}
               >
                 Size: {theImage.size} <br/>

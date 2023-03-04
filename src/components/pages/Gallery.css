@@ -35,6 +35,12 @@
     }
 }
 
+@media screen and (max-width: 548px){
+    .gallery {
+        margin-top: 50px !important;
+    }
+    }
+
 @media screen and (max-width: 482px) {
     .portfolio {
         margin-top: 140px;

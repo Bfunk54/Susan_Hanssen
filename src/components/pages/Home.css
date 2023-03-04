@@ -175,11 +175,10 @@
         width: 600px;
     } */
 }
-@media screen and (max-width: 525px){
-.stage-cube-cont {
-    padding-left: 260px;
-    top: 250px;
-    width: 600px;
+
+@media screen and (max-width: 548px){
+.home {
+    margin-top: 50px !important;
 }
 }
 

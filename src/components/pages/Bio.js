@@ -5,15 +5,14 @@ import Typography from "@mui/material/Typography";
 
 export default function Bio() {
   return (
-    <div className="container" style={{marginTop: '100px', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div className="container bio" style={{marginTop: '100px', color: 'white', display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       <div
-              className="recent"
               style={{
                 textAlign: "center",
                 marginBottom: "10px",
                 width: "20%",
                 height: "40px",
-                backgroundColor: "rgba(28, 28, 28, 0.55)",
+                backgroundColor: "rgba(28, 28, 28, 0.75)",
                 backdropFilter: "blur(20px)",
                 WebkitBackdropFilter: "blur(20px)",
                 borderRadius: "20px",
@@ -23,8 +22,21 @@ export default function Bio() {
             >
       <h2>Bio</h2>
       </div>
-      <div style={{width: '92%'}}>
-      <Typography style={{fontSize: '16px'}} variant="p">
+      <div
+              style={{
+                marginBottom: "10px",
+                width: "92%",
+                padding: "20px",
+                backgroundColor: "rgba(28, 28, 28, 0.45)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+                borderRadius: "20px",
+                marginBottom: '20px',
+                alignSelf: 'center',
+                textAlign: 'center'
+              }}
+            >
+      <Typography style={{fontSize: '16px' }} variant="p">
         Susan Hanssen has been an award-winning painter for several years and
         she is well known in south Florida for her unique and exciting work. As
         a signature member of the National Watercolor Society, the American
@@ -46,6 +58,72 @@ export default function Bio() {
         www.susanhanssen.com or on Instagram (@susanfrosthanssen).
       </Typography>
       </div>
+      <div
+        style={{
+          textAlign: "center",
+          marginBottom: "10px",
+          width: "40%",
+          height: "40px",
+          backgroundColor: "rgba(28, 28, 28, 0.75)",
+          backdropFilter: "blur(20px)",
+          WebkitBackdropFilter: "blur(20px)",
+          borderRadius: "20px",
+          marginBottom: "20px",
+          alignSelf: "flex-start",
+        }}
+      >
+        <h2>Awards and Exhibitions</h2>
+      </div>
+      <div
+              style={{
+                marginBottom: "10px",
+                width: "82%",
+                padding: "20px",
+                backgroundColor: "rgba(28, 28, 28, 0.45)",
+                backdropFilter: "blur(20px)",
+                WebkitBackdropFilter: "blur(20px)",
+                borderRadius: "20px",
+                marginBottom: '20px',
+                alignSelf: 'center',
+                textAlign: 'center'
+              }}
+            >
+        <Typography style={{ fontSize: "18px" }} variant="p">
+        <span className="years">2023</span>Juried into Fallbrook 14th Annual Signature American Watermedia Exhibition<br/><br/>
+
+        <span className="years">2022</span>American Watercolor Society 155th Annual International Exhibition NYC<br/>
+           Bud &Gretchen Marble Medal<br/><br/>
+First Place Business for the Arts of Broward/ Art & Stroll<br/><br/>
+51st Florida Watercolor Society The Kim Minichiello Memorial Award<br/><br/>
+Juried into Fallbrook 13th Annual Signature American Watermedia Exhibition<br/><br/>
+
+<span className="years">2021</span>Juried into Fallbrook 12th Annual Signature American Watermedia Exhibiton<br/><br/>
+
+<span className="years">2018</span>Southern Watercolor Society 41st Annual Juried Exhibition<br/>
+           Watercolor Society of Alabama Award<br/><br/>
+    47th Florida Watercolor Society Guy Beattie Award<br/><br/>
+    Honorable Mention Coral Springs Museum Annual Regional Exhibition<br/><br/>
+
+    <span className="years">2017</span>Juried into American Watercolor Society 150th Annual International Exhibition NYC<br/><br/>
+
+    <span className="years">2016</span>American Watercolor Society 149th Annual International Exhibition NYC<br/>
+           Carl Folke Sahlin Medal<br/><br/>
+    Juried into Fallbrook 7th Annual Signature American Watermedia Exhibition<br/>
+            Merchandise Award<br/><br/>
+
+            <span className="years">2015</span>Juried into American Watercolor Society 148th Annual International Exhibition NYC<br/><br/> 
+    44th Florida Watercolor Society Exhibition The Carol Ann Sherman Memorial Award<br/><br/>
+
+    <span className="years">2013</span>42nd Florida Watercolor Society Exhibition Best in Show<br/><br/>
+
+    <span className="years">2012</span>41st Florida Watercolor Society Exhibition Alan R. Chiara Memorial Award<br/><br/>
+
+    <span className="years">2011</span>40th Florida Watercolor Society Exhibition Merchandise Award<br/><br/>
+
+    <span className="years">2010</span>39th Florida Watercolor Society Exhibition Best In Show<br/><br/>
+
+        </Typography>
+        </div>
     </div>
   );
 }
