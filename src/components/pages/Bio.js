@@ -8,7 +8,7 @@ export default function Bio() {
     <div
       className="container bio"
       style={{
-        marginTop: "100px",
+        marginTop: "110px",
         color: "white",
         display: "flex",
         flexDirection: "column",
@@ -47,7 +47,7 @@ export default function Bio() {
           textAlign: "left",
         }}
       >
-        <Typography style={{ fontSize: "16px" }} variant="p">
+        <Typography style={{ fontSize: "18px" }} variant="p">
           Susan Hanssen has been an award-winning painter for several years and
           she is well known in south Florida for her unique and exciting work.
           As a signature member of the National Watercolor Society, the American
@@ -110,7 +110,7 @@ export default function Bio() {
           textAlign: "left",
         }}
       >
-        <Typography style={{ fontSize: "18px" }} variant="p">
+        <Typography style={{ fontSize: "16px" }} variant="p">
           <span className="years">2023</span>- Juried into Fallbrook 14th Annual
           Signature American Watermedia Exhibition
           <br />

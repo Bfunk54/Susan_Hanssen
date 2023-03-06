@@ -64,22 +64,23 @@ function Nav() {
               className="logo"
               src={Logo}
             /> */}
-          <div
+          {/* <div
             className="text"
             style={{
               textAlign: "center",
               width: "300px",
               height: "50px",
-              backgroundColor: "rgba(41, 44, 49, 0.6)",
+              backgroundColor: "rgba(41, 44, 49, 0.)",
               backdropFilter: "blur(20px)",
               WebkitBackdropFilter: "blur(20px)",
               borderRadius: "20px",
               marginBottom: "10px",
               alignSelf: "flex-start",
             }}
-          >
-            <h1 style={{ color: "white" }}>Susan Hanssen</h1>
-          </div>
+          > */}
+            <h1 style={{ color: "white", fontSize: '1.5em', fontFamily: 'Nanum Myeongjo',
+  src: 'url(https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap)'}}>Susan Hanssen</h1>
+          {/* </div> */}
         </a>
         <button
           style={{ marginTop: "-25px", textDecoration: "none", marginTop: 0 }}

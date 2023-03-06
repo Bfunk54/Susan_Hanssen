@@ -8,7 +8,7 @@ export default function Statement() {
     <div
       className="container statement"
       style={{
-        marginTop: "100px",
+        marginTop: "110px",
         color: "white",
         display: "flex",
         flexDirection: "column",
@@ -46,7 +46,7 @@ export default function Statement() {
                 textAlign: 'left'
               }}
             >
-        <Typography style={{ fontSize: "16px" }} variant="p">
+        <Typography style={{ fontSize: "18px" }} variant="p">
           My paintings reflect experiences, feelings and thoughts from life’s
           events. For the most part, the ideas I work with are conundrums; the
           personal dilemmas, conflicts and issues shared by us all, such as
@@ -60,17 +60,12 @@ export default function Statement() {
           manipulated to create a visual metaphor. She appears ludicrous hidden
           under the shadows of a large military hat, theatrical white make-up
           and exaggerated red lips, but her innocence of life is precarious and
-          her only protection is her magic wand. <br/> <br/> Perhaps include a small picture
-          of Prudence with the above text wrapped around it? It wasn’t until I
-          did a number of paintings in this series that I recognized this little
-          person was, in many ways, a metaphor for my own life and the lives of
-          many others as we grapple with our personal dilemmas, even as adults.<br/> <br/>
+          her only protection is her magic wand. <br/> <br/>
           I frequently use animals, costumes and other symbols to support the
           narrative of story and metaphor, often as representation of strength
           and innocence, such as with toys of play. Recently, I started working
           with birds as a metaphor; showing a nagging annoyance rather than a
-          thing of beauty. The bird paintings are extremely powerful - perhaps
-          include a small version of each with wrap-around text?<br/> <br/> Ultimately, I
+          thing of beauty.<br/> <br/> Ultimately, I
           aspire to fascinate with the unfamiliar. To express a shared thought
           or experience in an image that is intriguing, unique, and somewhat
           quirky.

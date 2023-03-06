@@ -8,7 +8,7 @@ export default function Contact() {
     <div
       className="container contact"
       style={{
-        marginTop: "100px",
+        marginTop: "110px",
         color: "white",
         display: "flex",
         flexDirection: "column",

@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import img1 from "../img/gallery/1.jpeg";
 import img2 from "../img/gallery/2.jpg";
 import img3 from "../img/gallery/3.jpg";
@@ -50,41 +50,286 @@ import "./Gallery.css";
 
 export default function Gallery() {
   const images = [
-    { id: 1, image: img1, title: 'The Messenger', size: '18x28', mode: 'Gouache', sold: 'SOLD' }, 
-    { id: 2, image: img2, title: 'Dear Prudence', size: '38x57', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 3, image: img3, title: 'The Fateful Choice', size: '36x60', mode: 'Acrylic on Canvas', sold: 'SOLD' },
-    { id: 4, image: img4, title: 'Harebrained', size: '30x40', mode: 'Acrylic on Canvas', sold: 'SOLD' },
-    { id: 5, image: img5, title: 'Feeling What I Can Not See', size: '36x48', mode: 'Acrylic on Canvas', sold: 'SOLD' },
-    { id: 6, image: img6, title: 'The Joy Ride', size: '30x40', mode: 'Acrylic on Canvas', sold: 'SOLD' },
-    { id: 7, image: img7, title: 'The Red Veil', size: '28x20', mode: 'Watercolor', sold: 'SOLD' },
-    { id: 8, image: img8, title: 'Grace and the Two Napoleons', size: '22x30', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
-    { id: 9, image: img9, title: 'The Dress Up', size: '22x30', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
-    { id: 10, image: img10, title: 'Bird Feed', size: '22x30', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
-    { id: 11, image: img11, title: 'Birds of a Feather', size: '20x16', mode: 'Watercolor', sold: '' },
-    { id: 12, image: img12, title: 'The Disguise', size: '36x48', mode: 'Acrylic on Canvas', sold: 'SOLD' },
-    { id: 13, image: img13, title: 'The Visit', size: '36x48', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 14, image: img14, title: 'Sitting with Keith', size: '40x36', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 15, image: img15, title: 'The Unfamiliar Walk', size: '36x48', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 16, image: img16, title: 'Rush', size: '18x26', mode: 'Watercolor/Gouache on Gold Gesso', sold: '' },
-    { id: 17, image: img17, title: 'Stars and Stripes and Christmas Tree Lights', size: '22x30', mode: 'Watercolor', sold: '' },
-    { id: 18, image: img18, title: 'Going Forward', size: '21x22', mode: 'Gouache', sold: 'SOLD' },
-    { id: 19, image: img19, title: 'Out of the Everything into the Here', size: '36x48', mode: 'Acrylic', sold: '' },
-    { id: 20, image: img20, title: 'The Red Coat', size: '30x40', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 21, image: img21, title: 'Something Is Going On', size: '30x40', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 22, image: img22, title: 'The Hatter', size: '24x36', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 23, image: img23, title: 'The Monstrous Wish', size: '24x36', mode: 'Acrylic on Canvas', sold: '' },
-    { id: 24, image: img24, title: 'The White Truck', size: '24x37', mode: 'Acrylic on Canvas', sold: 'SOLD' },
-    { id: 25, image: img25, title: 'Rebecca', size: '28x37', mode: 'Acrylic on Canvas', sold: 'SOLD' },
-    { id: 26, image: img26, title: 'In or Out', size: '22x30', mode: 'Watercolor', sold: 'SOLD' },
-    { id: 27, image: img27, title: 'About Face', size: '20x20', mode: 'Watercolor/Charcoal', sold: '' },
-    { id: 28, image: img28, title: 'Baa Baa Black Sheep', size: '22x30', mode: 'Watercolor/Charcoal', sold: '' },
-    { id: 29, image: img29, title: 'Carbon Compound', size: '23x31', mode: 'Watercolor/Acrylic', sold: '' },
-    { id: 30, image: img30, title: 'Into the Ether', size: '18x23', mode: 'Gouache on Monoprint', sold: '' },
-    { id: 31, image: img31, title: 'Topless in Space', size: '16x20', mode: 'Gouache on Monoprint', sold: 'SOLD' },
-    { id: 32, image: img32, title: 'The Odd Sunset', size: '16x20', mode: 'Gouache on Monoprint', sold: 'SOLD' },
-    { id: 33, image: img33, title: 'The Broken Life Saver', size: '27x33', mode: 'Watercolor/Collage', sold: '' },
-    { id: 34, image: img34, title: 'Shark Fin Soup', size: '12x16', mode: 'Gouache/Collage', sold: '' },
-    { id: 35, image: img35, title: 'Egg Drop Soup', size: '12x16', mode: 'Gouache/Collage', sold: '' }
+    {
+      id: 1,
+      image: img1,
+      title: "The Messenger",
+      size: "18x28",
+      mode: "Gouache",
+      sold: "SOLD",
+    },
+    {
+      id: 2,
+      image: img2,
+      title: "Dear Prudence",
+      size: "38x57",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 3,
+      image: img3,
+      title: "The Fateful Choice",
+      size: "36x60",
+      mode: "Acrylic on Canvas",
+      sold: "SOLD",
+    },
+    {
+      id: 4,
+      image: img4,
+      title: "Harebrained",
+      size: "30x40",
+      mode: "Acrylic on Canvas",
+      sold: "SOLD",
+    },
+    {
+      id: 5,
+      image: img5,
+      title: "Feeling What I Can Not See",
+      size: "36x48",
+      mode: "Acrylic on Canvas",
+      sold: "SOLD",
+    },
+    {
+      id: 6,
+      image: img6,
+      title: "The Joy Ride",
+      size: "30x40",
+      mode: "Acrylic on Canvas",
+      sold: "SOLD",
+    },
+    {
+      id: 7,
+      image: img7,
+      title: "The Red Veil",
+      size: "28x20",
+      mode: "Watercolor",
+      sold: "SOLD",
+    },
+    {
+      id: 8,
+      image: img8,
+      title: "Grace and the Two Napoleons",
+      size: "22x30",
+      mode: "Watercolor/Gouache on Gold Gesso",
+      sold: "",
+    },
+    {
+      id: 9,
+      image: img9,
+      title: "The Dress Up",
+      size: "22x30",
+      mode: "Watercolor/Gouache on Gold Gesso",
+      sold: "",
+    },
+    {
+      id: 10,
+      image: img10,
+      title: "Bird Feed",
+      size: "22x30",
+      mode: "Watercolor/Gouache on Gold Gesso",
+      sold: "",
+    },
+    {
+      id: 11,
+      image: img11,
+      title: "Birds of a Feather",
+      size: "20x16",
+      mode: "Watercolor",
+      sold: "",
+    },
+    {
+      id: 12,
+      image: img12,
+      title: "The Disguise",
+      size: "36x48",
+      mode: "Acrylic on Canvas",
+      sold: "SOLD",
+    },
+    {
+      id: 13,
+      image: img13,
+      title: "The Visit",
+      size: "36x48",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 14,
+      image: img14,
+      title: "Sitting with Keith",
+      size: "40x36",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 15,
+      image: img15,
+      title: "The Unfamiliar Walk",
+      size: "36x48",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 16,
+      image: img16,
+      title: "Rush",
+      size: "18x26",
+      mode: "Watercolor/Gouache on Gold Gesso",
+      sold: "",
+    },
+    {
+      id: 17,
+      image: img17,
+      title: "Stars and Stripes and Christmas Tree Lights",
+      size: "22x30",
+      mode: "Watercolor",
+      sold: "",
+    },
+    {
+      id: 18,
+      image: img18,
+      title: "Going Forward",
+      size: "21x22",
+      mode: "Gouache",
+      sold: "SOLD",
+    },
+    {
+      id: 19,
+      image: img19,
+      title: "Out of the Everything into the Here",
+      size: "36x48",
+      mode: "Acrylic",
+      sold: "",
+    },
+    {
+      id: 20,
+      image: img20,
+      title: "The Red Coat",
+      size: "30x40",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 21,
+      image: img21,
+      title: "Something Is Going On",
+      size: "30x40",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 22,
+      image: img22,
+      title: "The Hatter",
+      size: "24x36",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 23,
+      image: img23,
+      title: "The Monstrous Wish",
+      size: "24x36",
+      mode: "Acrylic on Canvas",
+      sold: "",
+    },
+    {
+      id: 24,
+      image: img24,
+      title: "The White Truck",
+      size: "24x37",
+      mode: "Acrylic on Canvas",
+      sold: "SOLD",
+    },
+    {
+      id: 25,
+      image: img25,
+      title: "Rebecca",
+      size: "28x37",
+      mode: "Acrylic on Canvas",
+      sold: "SOLD",
+    },
+    {
+      id: 26,
+      image: img26,
+      title: "In or Out",
+      size: "22x30",
+      mode: "Watercolor",
+      sold: "SOLD",
+    },
+    {
+      id: 27,
+      image: img27,
+      title: "About Face",
+      size: "20x20",
+      mode: "Watercolor/Charcoal",
+      sold: "",
+    },
+    {
+      id: 28,
+      image: img28,
+      title: "Baa Baa Black Sheep",
+      size: "22x30",
+      mode: "Watercolor/Charcoal",
+      sold: "",
+    },
+    {
+      id: 29,
+      image: img29,
+      title: "Carbon Compound",
+      size: "23x31",
+      mode: "Watercolor/Acrylic",
+      sold: "",
+    },
+    {
+      id: 30,
+      image: img30,
+      title: "Into the Ether",
+      size: "18x23",
+      mode: "Gouache on Monoprint",
+      sold: "",
+    },
+    {
+      id: 31,
+      image: img31,
+      title: "Topless in Space",
+      size: "16x20",
+      mode: "Gouache on Monoprint",
+      sold: "SOLD",
+    },
+    {
+      id: 32,
+      image: img32,
+      title: "The Odd Sunset",
+      size: "16x20",
+      mode: "Gouache on Monoprint",
+      sold: "SOLD",
+    },
+    {
+      id: 33,
+      image: img33,
+      title: "The Broken Life Saver",
+      size: "27x33",
+      mode: "Watercolor/Collage",
+      sold: "",
+    },
+    {
+      id: 34,
+      image: img34,
+      title: "Shark Fin Soup",
+      size: "12x16",
+      mode: "Gouache/Collage",
+      sold: "",
+    },
+    {
+      id: 35,
+      image: img35,
+      title: "Egg Drop Soup",
+      size: "12x16",
+      mode: "Gouache/Collage",
+      sold: "",
+    },
   ];
   const imageAmount = images.length - 1;
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -99,25 +344,25 @@ export default function Gallery() {
     setTheImage(image);
     setAnchorEl(event.currentTarget);
     if (imageIndex === imageAmount) {
-    console.log('hit 1');
-    setNextBtn("none");
-    setPrevBtn("visible");
+      console.log("hit 1");
+      setNextBtn("none");
+      setPrevBtn("visible");
     } else if (imageIndex === 0) {
-    console.log('hit 2');
-    setPrevBtn("none");
+      console.log("hit 2");
+      setPrevBtn("none");
       setNextBtn("visible");
     } else {
-    setNextBtn("visible");
+      setNextBtn("visible");
       setPrevBtn("visible");
     }
   }
-    // Handle closing the Popover
-    const handleClose = () => {
-      setAnchorEl(null);
-      console.log(theImage);
-    };
+  // Handle closing the Popover
+  const handleClose = () => {
+    setAnchorEl(null);
+    console.log(theImage);
+  };
 
-    // Handle the Next and Previous button clicks in the Popover
+  // Handle the Next and Previous button clicks in the Popover
   function handleNextClick(event, image) {
     if (index === 0) {
       setPrevBtn("visible");
@@ -148,24 +393,24 @@ export default function Gallery() {
     }
   }
 
-      // Set media query to check if the user is on mobile
+  // Set media query to check if the user is on mobile
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const NextButtons = styled(Button)({
     borderRadius: "40px",
-    backgroundColor: "rgba(23, 185, 255, 0.35)",
+    backgroundColor: "rgb(178, 178, 178, .65)",
     border: "1px solid",
-    borderColor: "rgb(23, 129, 221)",
+    borderColor: "rgb(178, 178, 178, .95)",
     color: "rgb(2, 47, 41)",
     backdropFilter: "blur(10px)",
     textTransform: "none",
     fontSize: "14px",
-    ":hover": { backgroundColor: "rgb(23, 162, 221)", fontSize: "14.2px" },
+    ":hover": { backgroundColor: "rgb(0, 171, 179, .7)", fontSize: "14.2px" },
   });
 
   return (
-    <div className="gallery" style={{ margin: "auto", marginTop: '-60px' }}>
+    <div className="gallery" style={{ margin: "auto", marginTop: "-50px" }}>
       <section className="portfolio-block projects-with-sidebar portfolio">
         <div className="container">
           <div className="heading">
@@ -182,29 +427,45 @@ export default function Gallery() {
                 borderRadius: "20px",
               }}
             >
-              <h2 style={{ color: 'white'}}>Recent Work</h2>
+              <h2 style={{ color: "white" }}>Gallery</h2>
             </div>
           </div>
-          <div className="row">
+          <div
+            className="row"
+            style={{ display: "flex", justifyContent: "center" }}
+          >
             {images.map((image) => (
               <div
-              key={image.id}
+                key={image.id}
                 style={{ marginBottom: 26 }}
                 className="col-md-6 col-lg-4 project-sidebar-card"
               >
-                <Card onClick={(event) => handleImageClick(event, image)} bg="dark" border="none" style={{borderRadius: '20px', cursor: 'pointer'}}>
-                  <img src={image.image} style={{borderTopLeftRadius: '20px', borderTopRightRadius: '20px'}} />
+                <Card
+                  className="card"
+                  onClick={(event) => handleImageClick(event, image)}
+                  bg="transparent"
+                  style={{ cursor: "pointer", border: "none" }}
+                >
+                  <img src={image.image} />
 
-                  <Card.Header style={{ textAlign: 'center', fontSize: "16px", color: 'white' }}>
+                  <Card.Header
+                    style={{
+                      textAlign: "center",
+                      fontSize: "16px",
+                      color: "white",
+                      border: "none",
+                      background: "transparent",
+                    }}
+                  >
                     {image.title}
                   </Card.Header>
-                  <Card.Body>
+                  {/* <Card.Body>
                     <Card.Text style={{ textAlign: 'center', fontSize: "14px", color: 'white' }}>
                     {image.size} <br/>
                     {image.mode} <br/>
                     {image.sold}
                     </Card.Text>
-                  </Card.Body>
+                  </Card.Body> */}
                 </Card>
               </div>
             ))}
@@ -217,7 +478,7 @@ export default function Gallery() {
               anchorReference={"none"}
               BackdropProps={{
                 style: {
-                  backgroundColor: "rgba(38, 38, 38, 0.55)"
+                  backgroundColor: "rgba(38, 38, 38, 0.98)",
                 },
               }}
               sx={{
@@ -226,87 +487,117 @@ export default function Gallery() {
                 alignItems: "center",
                 flexDirection: "column",
                 width: "auto",
-                height: "100vh"
+                height: "100vh",
               }}
             >
-              <div style={{height: '100vh'}}>
-              {/* Close Icon */}
-              <Button
-                  sx={{ margin: '10px', padding: 0, maxWidth: "36px", minWidth: "36px", right: '5px', top: '5px', position: 'absolute' }}
+              <div style={{ height: "100vh" }}>
+                {/* Close Icon */}
+                <Button
+                  sx={{
+                    margin: "10px",
+                    padding: 0,
+                    maxWidth: "36px",
+                    minWidth: "36px",
+                    right: "5px",
+                    top: "5px",
+                    position: "absolute",
+                    color:' rgb(178, 178, 178, 0.65)',
+                  }}
                   onClick={handleClose}
                 >
                   <CloseIcon sx={{ fontSize: 36 }} />
                 </Button>
-              {!isMobile ? (
+                {!isMobile ? (
+                  <NextButtons
+                    sx={{
+                      marginRight: 3,
+                      height: 38.5,
+                      left: "40px",
+                      top: "300px",
+                      position: "absolute",
+                      display: prevBtn,
+                    }}
+                    onClick={(event) => handlePreviousClick(event, theImage)}
+                  >
+                    <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
+                    
+                  </NextButtons>
+                ) : (
+                  <NextButtons
+                    sx={{
+                      marginRight: 3,
+                      position: "absolute",
+                      left: "40px",
+                      top: "300px",
+                      height: 38.5,
+                      display: prevBtn,
+                    }}
+                    onClick={(event) => handlePreviousClick(event, theImage)}
+                  >
+                    <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
+                    
+                  </NextButtons>
+                )}
                 <NextButtons
-                  sx={{ marginRight: 3, height: 38.5, left: '40px', top: '300px', position: 'absolute', display: prevBtn }}
-                  onClick={(event) => handlePreviousClick(event, theImage)}
+                  sx={{
+                    marginLeft: 3,
+                    height: 38.5,
+                    right: "40px",
+                    top: "300px",
+                    position: "absolute",
+                    display: nextBtn,
+                  }}
+                  onClick={(event) => handleNextClick(event, theImage)}
                 >
-                  <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
-                  Previous
+                  
+                  <ArrowForwardIosIcon fontSize="small"></ArrowForwardIosIcon>
                 </NextButtons>
-              ) : (
-                <NextButtons
-                  sx={{ marginRight: 3, position: 'absolute', left: '40px', top: '300px', height: 38.5, display: prevBtn }}
-                  onClick={(event) => handlePreviousClick(event, theImage)}
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "flex-end",
+                    alignItems: "center",
+                    height: "78vh",
+                    maxWidth: "64vw",
+                    position: "relative",
+                    marginTop: "10px",
+                  }}
                 >
-                  <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
-                  Prev
-                </NextButtons>
-              )}
-              <NextButtons
-                sx={{ marginLeft: 3, height: 38.5, right: '40px', top: '300px', position: 'absolute', display: nextBtn }}
-                onClick={(event) => handleNextClick(event, theImage)}
-              >
-                Next<ArrowForwardIosIcon fontSize="small"></ArrowForwardIosIcon>
-              </NextButtons>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "flex-end",
-                  alignItems: "center",
-                  height: '78vh',
-                  maxWidth: "64vw",
-                  position: 'relative',
-                  marginTop: '10px'
-                }}
-              >
-              
                   <img
                     src={theImage.image}
-                    style={{ maxHeight: '100%', width: '100%' }}
+                    style={{ maxHeight: "100%", width: "100%" }}
                   />
-                  </div>
-                  <div>
-              <Typography
-                variant="h5"
-                sx={{
-                  textAlign: "center",
-                  color: 'white',
-                  margin: 0,
-                  padding: 1,
-                  width: '100%'
-                }}
-              >
-                {theImage.title}
-              </Typography>
-              <Typography
-                variant="p"
-                sx={{
-                  textAlign: "center",
-                  color: 'white',
-                  margin: 0,
-                  width: '100%',
-                  fontSize: '15px',
-                  display: 'block',
-                  marginBottom: '6px',
-                }}
-              >
-                Size: {theImage.size} <br/>
-                   Medium: {theImage.mode} <br/>
+                </div>
+                <div>
+                  <Typography
+                    variant="h5"
+                    sx={{
+                      textAlign: "center",
+                      color: "white",
+                      margin: 0,
+                      padding: 1,
+                      width: "100%",
+                    }}
+                  >
+                    {theImage.title}
+                  </Typography>
+                  <Typography
+                    variant="p"
+                    sx={{
+                      textAlign: "center",
+                      color: "white",
+                      margin: 0,
+                      width: "100%",
+                      fontSize: "15px",
+                      display: "block",
+                      marginBottom: "6px",
+                    }}
+                  >
+                    {theImage.size} <br />
+                    {theImage.mode} <br />
                     {theImage.sold}
-              </Typography>
-              </div>
+                  </Typography>
+                </div>
               </div>
             </Popover>
           </div>

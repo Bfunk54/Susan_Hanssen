@@ -115,15 +115,15 @@
     background-color: rgba(3, 255, 255, 0.243)  !important;
     border-color:  rgba(3, 255, 255, 0.288)  !important;
   }
+/* 
+   @media screen and (min-width: 975px){ 
+    .card {
+        height: 100% !important;
+ 
+    }
 
-  @media screen and (max-width: 1400px) {
-    .likewhat {
-        
-    }
-    .stage-cube-cont {
-        
-    }
-  }
+  } */
+
 
   @media screen and (max-width: 992px) {
     .special {
