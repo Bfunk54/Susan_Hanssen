@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://bfunk54.github.io/Susan_Hanssen/static/css/main.2f9b7887.css",
-    "main.js": "https://bfunk54.github.io/Susan_Hanssen/static/js/main.e736e5b3.js",
+    "main.js": "https://bfunk54.github.io/Susan_Hanssen/static/js/main.16f8e3ab.js",
     "static/media/6.jpg": "https://bfunk54.github.io/Susan_Hanssen/static/media/6.6a6b67b5b05fc520e9a0.jpg",
     "static/media/13.jpg": "https://bfunk54.github.io/Susan_Hanssen/static/media/13.8d160f3febc401bc6f80.jpg",
     "static/media/28.jpg": "https://bfunk54.github.io/Susan_Hanssen/static/media/28.da03115b037229b100f3.jpg",
@@ -42,10 +42,10 @@
     "static/media/27.webp": "https://bfunk54.github.io/Susan_Hanssen/static/media/27.6add626461d794604488.webp",
     "index.html": "https://bfunk54.github.io/Susan_Hanssen/index.html",
     "main.2f9b7887.css.map": "https://bfunk54.github.io/Susan_Hanssen/static/css/main.2f9b7887.css.map",
-    "main.e736e5b3.js.map": "https://bfunk54.github.io/Susan_Hanssen/static/js/main.e736e5b3.js.map"
+    "main.16f8e3ab.js.map": "https://bfunk54.github.io/Susan_Hanssen/static/js/main.16f8e3ab.js.map"
   },
   "entrypoints": [
     "static/css/main.2f9b7887.css",
-    "static/js/main.e736e5b3.js"
+    "static/js/main.16f8e3ab.js"
   ]
 }
