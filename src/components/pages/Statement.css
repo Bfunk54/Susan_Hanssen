@@ -2,6 +2,21 @@
   padding-top: 180px;
 }
 
+@media screen and (max-width: 992px) {
+  .statementHeader {
+    height: 80px !important;
+    padding-top: 4px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .statementHeader {
+    width: 40% !important;
+
+    padding-top: 8px;
+  }
+}
+
 @media screen and (max-width: 769px) {
   .resumeContainer{
     padding-top: 210px;

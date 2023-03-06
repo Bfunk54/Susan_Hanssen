@@ -32,46 +32,55 @@ function Nav() {
     // 696eff  -- navbar color
     <nav
       style={{
-        backgroundColor: "rgba(108, 108, 108, 0.55)",
+        backgroundColor: "rgba(41, 44, 49, 0.7)",
         backdropFilter: "blur(20px)",
-        WebkitBackdropFilter: 'blur(20px)',
+        WebkitBackdropFilter: "blur(20px)",
         borderBottomLeftRadius: "40px",
         borderBottomRightRadius: "40px",
-        width: '100%'
+        width: "100%",
       }}
       className="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient"
     >
       <div
-        style={{ display: "flex", justifyContent: "center", alignItems: 'center' }}
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
         className="container"
       >
-          <a
-            className="navbar-brand logo"
-            style={{ fontSize: "34px", color: "black", paddingTop: '10px', fontWeight: 500 }}
-            href="#"
-          >
-            {/* <img
+        <a
+          className="navbar-brand logo"
+          style={{
+            fontSize: "34px",
+            color: "black",
+            paddingTop: "10px",
+            fontWeight: 500,
+          }}
+          href="#"
+        >
+          {/* <img
               style={{ height: 80, width: 525 }}
               className="logo"
               src={Logo}
             /> */}
-            <div
-            className= 'text'
-        style={{
-          textAlign: "center",
-          width: "290px",
-          height: "46px",
-          backgroundColor: "rgba(28, 28, 28, 0.4)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          borderRadius: "20px",
-          marginBottom: "10px",
-          alignSelf: "flex-start"
-        }}
-      >
-            <h1 style={{color: 'white'}}>Susan Hanssen</h1>
-            </div>
-          </a>
+          <div
+            className="text"
+            style={{
+              textAlign: "center",
+              width: "300px",
+              height: "50px",
+              backgroundColor: "rgba(41, 44, 49, 0.6)",
+              backdropFilter: "blur(20px)",
+              WebkitBackdropFilter: "blur(20px)",
+              borderRadius: "20px",
+              marginBottom: "10px",
+              alignSelf: "flex-start",
+            }}
+          >
+            <h1 style={{ color: "white" }}>Susan Hanssen</h1>
+          </div>
+        </a>
         <button
           style={{ marginTop: "-25px", textDecoration: "none", marginTop: 0 }}
           data-bs-toggle="collapse"
@@ -92,42 +101,47 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul
-            style={{ display: 'flex',
-            justifyContent: 'space-evenly', width: '100%'}}
+            style={{
+              display: "flex",
+              justifyContent: "space-evenly",
+              width: "100%",
+            }}
             className="navbar-nav"
           >
             <li
               style={{
                 display: "flex",
                 justifyContent: "center",
-                marginRight: "10px"
+                marginRight: "10px",
               }}
               className="nav-item home navbar-toggler"
             >
               <Link
                 to="/"
                 style={{ color: "white", textDecoration: "none", fontSize: 18 }}
-                onClick={() => {setOpen(open => !open);}}
+                onClick={() => {
+                  setOpen((open) => !open);
+                }}
               >
                 {isMobile ? (
-                <button
-                  className="btn btn-bd-primary btn"
-                  data-bs-toggle="collapse"
-                  data-bs-target=".navbar-collapse.show"
-                  type="button"
-                >
-                  Home
-                </button>
+                  <button
+                    className="btn btn-bd-primary btn"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    type="button"
+                  >
+                    Home
+                  </button>
                 ) : (
                   <button className="btn btn-bd-primary btn">Home</button>
-                  )}
+                )}
               </Link>
             </li>
             <li
               style={{
                 display: "flex",
                 justifyContent: "center",
-                marginRight: "10px"
+                marginRight: "10px",
               }}
               className="nav-item navbar-toggler"
             >
@@ -135,21 +149,21 @@ function Nav() {
                 to="/gallery"
                 style={{ color: "white", textDecoration: "none", fontSize: 18 }}
                 onClick={() => {
-                  setOpen(open => !open);
+                  setOpen((open) => !open);
                 }}
               >
-               {isMobile ? (
-                <button
-                  className="btn btn-bd-primary btn"
-                  data-bs-toggle="collapse"
-                  data-bs-target=".navbar-collapse.show"
-                  type="button"
-                >
-                  Gallery
-                </button>
+                {isMobile ? (
+                  <button
+                    className="btn btn-bd-primary btn"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    type="button"
+                  >
+                    Gallery
+                  </button>
                 ) : (
                   <button className="btn btn-bd-primary btn">Gallery</button>
-                  )}
+                )}
               </Link>
             </li>
             <li
@@ -164,21 +178,21 @@ function Nav() {
                 to="/bio"
                 style={{ color: "white", textDecoration: "none", fontSize: 18 }}
                 onClick={() => {
-                  setOpen(open => !open);
+                  setOpen((open) => !open);
                 }}
               >
-               {isMobile ? (
-                <button
-                  className="btn btn-bd-primary btn"
-                  data-bs-toggle="collapse"
-                  data-bs-target=".navbar-collapse.show"
-                  type="button"
-                >
-                  Bio
-                </button>
+                {isMobile ? (
+                  <button
+                    className="btn btn-bd-primary btn"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    type="button"
+                  >
+                    Bio
+                  </button>
                 ) : (
                   <button className="btn btn-bd-primary btn">Bio</button>
-                  )}
+                )}
               </Link>
             </li>
             <li
@@ -193,21 +207,21 @@ function Nav() {
                 to="/statement"
                 style={{ color: "white", textDecoration: "none", fontSize: 18 }}
                 onClick={() => {
-                  setOpen(open => !open);
+                  setOpen((open) => !open);
                 }}
               >
-               {isMobile ? (
-                <button
-                  className="btn btn-bd-primary btn"
-                  data-bs-toggle="collapse"
-                  data-bs-target=".navbar-collapse.show"
-                  type="button"
-                >
-                  Statement
-                </button>
+                {isMobile ? (
+                  <button
+                    className="btn btn-bd-primary btn"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    type="button"
+                  >
+                    Statement
+                  </button>
                 ) : (
                   <button className="btn btn-bd-primary btn">Statement</button>
-                  )}
+                )}
               </Link>
             </li>
             <li
@@ -218,22 +232,22 @@ function Nav() {
                 to="/contact"
                 style={{ color: "white", textDecoration: "none", fontSize: 18 }}
                 onClick={() => {
-                  setOpen(open => !open);
+                  setOpen((open) => !open);
                 }}
               >
                 {isMobile ? (
-                <button
-                  className="btn btn-bd-primary btn"
-                  data-bs-toggle="collapse"
-                  data-bs-target=".navbar-collapse.show"
-                  type="button"
-                >
-                  Contact
-                </button>
+                  <button
+                    className="btn btn-bd-primary btn"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show"
+                    type="button"
+                  >
+                    Contact
+                  </button>
                 ) : (
                   <button className="btn btn-bd-primary btn">Contact</button>
-                  )}
-                  </Link>
+                )}
+              </Link>
             </li>
           </ul>
         </div>

@@ -176,7 +176,7 @@ export default function Gallery() {
                 marginBottom: "10px",
                 width: "20%",
                 height: "40px",
-                backgroundColor: "rgba(28, 28, 28, 0.75)",
+                backgroundColor: "rgba(41, 44, 49, 0.9)",
                 backdropFilter: "blur(20px)",
                 WebkitBackdropFilter: "blur(20px)",
                 borderRadius: "20px",

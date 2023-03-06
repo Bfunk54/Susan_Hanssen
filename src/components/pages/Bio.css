@@ -1,28 +1,56 @@
-.resumeContainer{
+.resumeContainer {
   padding-top: 180px;
 }
 
 .years {
-  text-align: left;
-  background-color: rgba(28, 28, 28, 0.75);
-          backdrop-filter: blur(20px);
-          -webkit-backdrop-filter: blur(20px);
-          width: 64px;
-          height: 34px;
-          padding-left: 7px;
-          border-radius: 20px;
-          display: block;
-          font-size: 22px;
+  text-align: center;
+  background-color: rgba(41, 44, 49, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  width: 72px;
+  height: 34px;
+  border-radius: 20px;
+  display: block;
+  font-size: 22px;
+  margin-bottom: 8px;
 }
 
+.lines {
+  border-bottom: 1px solid white;
+  width: 100%;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+  .awardsHeader {
+    height: 78px !important;
+    width: 38% !important;
+    padding-top: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bioHeader {
+    padding-bottom: 40px !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .awardsHeader {
+    padding-top: 8px;
+  }
+}
+
+
 @media screen and (max-width: 769px) {
-  .resumeContainer{
+  .resumeContainer {
     padding-top: 210px;
   }
 }
 
-@media screen and (max-width: 548px){
+@media screen and (max-width: 548px) {
   .bio {
-      margin-top: 160px !important;
+    margin-top: 160px !important;
   }
-  }
+}

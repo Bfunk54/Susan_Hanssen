@@ -21,7 +21,7 @@ export default function Home() {
       <div
               key={image.id}
                 style={{ marginBottom: 26 }}
-                className="col-8 col-sm-8 col-md-6 col-lg-4 project-sidebar-card"
+                className="col-8 col-sm-6 col-md-4 col-lg-3 project-sidebar-card"
               >
                 <Link
                 to="/gallery"

@@ -33,7 +33,7 @@ li {
     }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
     .nav-item {
         margin-bottom: 10px;
     }
@@ -42,6 +42,24 @@ li {
     }
     .btn {
         margin-right: -36px;
+    }
+}
+
+@media screen and (max-width: 874px) {
+    .text {
+        padding-top: 6px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .text {
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 35px;
     }
 }
 

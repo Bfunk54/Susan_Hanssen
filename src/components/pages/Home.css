@@ -74,7 +74,7 @@
     position: absolute;
     top: -7px;
     left: 0;
-    background-color:  rgba(255, 58, 3, 0.698) !important;
+    background-color:  rgb(0, 171, 179, .7) !important;
     width: 30%;
     height: 3px;
     transition:all 0.3s ease 0s;
@@ -84,7 +84,7 @@
     position: absolute;
     bottom: -7px;
     right: 0;
-    background-color:  rgba(255, 58, 3, 0.698) !important;
+    background-color:  rgb(0, 171, 179, .7)  !important;
     width: 30%;
     height: 3px;
     transition:all 0.3s ease 0s;
@@ -94,21 +94,21 @@
 .btn.active:before,
 .btn.active:after{
     width: 100%;
-    background-color:rgba(255, 152, 17, 0.696) !important;
+    background-color: rgb(0, 171, 179, .7)  !important;
 }
 
 .btn-bd-primary {
     font-weight: 600!important;
     color: white !important;
-    background-color:rgb(34, 34, 34) !important;
-    border-color: rgb(72, 72, 72) !important;
+    background-color:rgba(41, 44, 49, 0.9) !important;
+    border-color: rgba(41, 44, 49)  !important;
     border-radius: .5rem !important;
   }
 
   .btn-bd-primary:hover {
     color: white !important;
-    background-color:  rgba(255, 58, 3, 0.698) !important;
-    border-color: rgba(255, 58, 3, 0.698) !important;
+    background-color:  rgba(0, 189, 199, 0.7) !important;
+    border-color: rgba(0, 222, 234, 0.8) !important;
   }
   .btn-bd-primary:active {
     color: white !important;

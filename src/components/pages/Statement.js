@@ -16,12 +16,13 @@ export default function Statement() {
       }}
     >
       <div
+      className='statementHeader'
         style={{
           textAlign: "center",
           marginBottom: "10px",
           width: "32%",
           height: "40px",
-          backgroundColor: "rgba(28, 28, 28, 0.75)",
+          backgroundColor: "rgba(41, 44, 49, 0.9)",
           backdropFilter: "blur(20px)",
           WebkitBackdropFilter: "blur(20px)",
           borderRadius: "20px",
@@ -36,13 +37,13 @@ export default function Statement() {
                 marginBottom: "10px",
                 width: "92%",
                 padding: "20px",
-                backgroundColor: "rgba(28, 28, 28, 0.45)",
+                backgroundColor: "rgba(41, 44, 49, 0.5)",
                 backdropFilter: "blur(20px)",
                 WebkitBackdropFilter: "blur(20px)",
                 borderRadius: "20px",
                 marginBottom: '20px',
                 alignSelf: 'center',
-                textAlign: 'center'
+                textAlign: 'left'
               }}
             >
         <Typography style={{ fontSize: "16px" }} variant="p">

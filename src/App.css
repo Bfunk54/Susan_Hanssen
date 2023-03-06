@@ -13,5 +13,6 @@ body, #app, app>div, #root {
 }
 
 html {
-    background-color:rgb(48, 48, 48);
+    background-color: rgb(178, 178, 178);
+    color: rgba(41, 44, 49, 0.75);
 }
