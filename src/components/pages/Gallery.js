@@ -476,6 +476,7 @@ export default function Gallery() {
               anchorEl={anchorEl}
               onClose={handleClose}
               anchorReference={"none"}
+              className='pop'
               BackdropProps={{
                 style: {
                   backgroundColor: "rgba(38, 38, 38, 0.98)",
@@ -490,7 +491,7 @@ export default function Gallery() {
                 height: "100vh",
               }}
             >
-              <div style={{ height: "100vh" }}>
+              <div style={{ height: "100vh", display:'flex', flexDirection: 'column', alignItems: 'center' }}>
                 {/* Close Icon */}
                 <Button
                   sx={{
@@ -509,9 +510,11 @@ export default function Gallery() {
                 </Button>
                 {!isMobile ? (
                   <NextButtons
+                  className="prevBtn"
                     sx={{
                       marginRight: 3,
                       height: 38.5,
+                      padding: 2,
                       left: "40px",
                       top: "300px",
                       position: "absolute",
@@ -524,6 +527,7 @@ export default function Gallery() {
                   </NextButtons>
                 ) : (
                   <NextButtons
+                  className="nextBtn"
                     sx={{
                       marginRight: 3,
                       position: "absolute",
@@ -539,6 +543,7 @@ export default function Gallery() {
                   </NextButtons>
                 )}
                 <NextButtons
+                className="nextBtn"
                   sx={{
                     marginLeft: 3,
                     height: 38.5,
@@ -555,7 +560,7 @@ export default function Gallery() {
                 <div
                   style={{
                     display: "flex",
-                    justifyContent: "flex-end",
+                    justifyContent: "center",
                     alignItems: "center",
                     height: "78vh",
                     maxWidth: "64vw",
@@ -566,6 +571,7 @@ export default function Gallery() {
                   <img
                     src={theImage.image}
                     style={{ maxHeight: "100%", width: "100%" }}
+                    className='popCard'
                   />
                 </div>
                 <div>

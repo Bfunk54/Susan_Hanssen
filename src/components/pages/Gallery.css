@@ -39,6 +39,19 @@
     }
 }
 
+.css-8je8zh-MuiTouchRipple-root {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 658px) {
+    .nextBtn {
+        top: 610px !important;
+    }
+    .prevBtn {
+        top: 610px !important;
+    }
+}
+
 @media screen and (max-width: 548px){
     .gallery {
         margin-top: 50px !important;

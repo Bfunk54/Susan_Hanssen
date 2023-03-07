@@ -34,13 +34,12 @@ export default function PortfolioContainer() {
   // const history = createBrowserHistory({ basename: '/Susan_Hanssen' });
 
   return (
-    <Router basename="/Susan_Hanssen">
+    <Router>
       <div>
         <Nav/>
         <main >
           <Routes>
             <Route path="/" element={<Home />} />
-            
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/bio" element={<Bio />} />
             <Route path="/statement" element={<Statement />} />
