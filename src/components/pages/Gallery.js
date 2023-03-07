@@ -574,7 +574,7 @@ export default function Gallery() {
                     className='popCard'
                   />
                 </div>
-                <div>
+                <div className="popInfo">
                   <Typography
                     variant="h5"
                     sx={{

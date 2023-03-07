@@ -60,6 +60,9 @@
     .popCard {
         margin-top: -100px;
     }
+    .popInfo {
+        margin-top: -100px;
+    }
 }
 
 @media screen and (max-width: 548px){
