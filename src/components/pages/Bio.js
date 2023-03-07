@@ -27,8 +27,7 @@ export default function Bio() {
           WebkitBackdropFilter: "blur(20px)",
           borderRadius: "20px",
           marginBottom: "20px",
-          alignSelf: "flex-start",
-          paddingTop: "4px",
+          alignSelf: "flex-start"
         }}
       >
         <h2>Bio</h2>

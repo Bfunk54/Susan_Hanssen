@@ -36,6 +36,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .bioHeader {
+    padding-top: 4px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .awardsHeader {
     padding-top: 8px;
