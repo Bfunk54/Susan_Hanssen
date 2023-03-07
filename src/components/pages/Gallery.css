@@ -45,10 +45,10 @@
 
 @media screen and (max-width: 658px) {
     .nextBtn {
-        top: 520px !important;
+        top: 580px !important;
     }
     .prevBtn {
-        top: 520px !important;
+        top: 580px !important;
 
     }
     .popCard {
@@ -56,12 +56,18 @@
     }
 }
 
+/* @media screen and (min-width: 680px) {
+    .popCard {
+        max-height: 100% !important;
+    }
+} */
+
 @media screen and (max-width: 598px) {
     .popCard {
         margin-top: -100px;
     }
     .popInfo {
-        margin-top: -100px;
+        margin-top: -110px;
     }
 }
 

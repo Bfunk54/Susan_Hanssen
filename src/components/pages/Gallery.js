@@ -432,12 +432,12 @@ export default function Gallery() {
           </div>
           <div
             className="row"
-            style={{ display: "flex", justifyContent: "center" }}
+            style={{ display: "flex", justifyContent: "center", alignItems: 'flex-start' }}
           >
             {images.map((image) => (
               <div
                 key={image.id}
-                style={{ marginBottom: 26 }}
+                style={{ marginBottom: 26, alignItems: 'flex-start' }}
                 className="col-md-6 col-lg-4 project-sidebar-card"
               >
                 <Card
@@ -446,7 +446,7 @@ export default function Gallery() {
                   bg="transparent"
                   style={{ cursor: "pointer", border: "none" }}
                 >
-                  <img src={image.image} />
+                  <img style={{width: '100%'}} src={image.image} />
 
                   <Card.Header
                     style={{
@@ -570,7 +570,7 @@ export default function Gallery() {
                 >
                   <img
                     src={theImage.image}
-                    style={{ maxHeight: "100%", width: "100%" }}
+                    style={{ width: "auto", height: 'intrinsic', maxHeight: '100%', maxWidth: '100%' }}
                     className='popCard'
                   />
                 </div>

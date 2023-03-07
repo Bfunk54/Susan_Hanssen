@@ -37,9 +37,9 @@ export default function Home() {
                 <Card
                   className="card"
                   bg="transparent"
-                  style={{ cursor: "pointer", border: "none" }}
+                  style={{ cursor: "pointer", border: "none"}}
                 >
-                  <img src={image.image} />
+                  <img style={{ width: '100%' }} src={image.image} />
 
                   {/* <Card.Header
                     style={{
