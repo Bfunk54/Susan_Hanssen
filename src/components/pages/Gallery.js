@@ -515,7 +515,7 @@ export default function Gallery() {
                       marginRight: 3,
                       height: 38.5,
                       padding: 2,
-                      left: "40px",
+                      left: "20px",
                       top: "300px",
                       position: "absolute",
                       display: prevBtn,
@@ -531,7 +531,7 @@ export default function Gallery() {
                     sx={{
                       marginRight: 3,
                       position: "absolute",
-                      left: "40px",
+                      left: "20px",
                       top: "300px",
                       height: 38.5,
                       display: prevBtn,
@@ -547,7 +547,7 @@ export default function Gallery() {
                   sx={{
                     marginLeft: 3,
                     height: 38.5,
-                    right: "40px",
+                    right: "20px",
                     top: "300px",
                     position: "absolute",
                     display: nextBtn,
