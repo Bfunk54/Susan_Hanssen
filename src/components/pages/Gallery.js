@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img1 from "../img/gallery/1.jpeg";
+import img1 from "../img/gallery/1.jpg";
 import img2 from "../img/gallery/2.jpg";
 import img3 from "../img/gallery/3.jpg";
 import img4 from "../img/gallery/4.jpg";
@@ -446,7 +446,7 @@ export default function Gallery() {
                   bg="transparent"
                   style={{ cursor: "pointer", border: "none" }}
                 >
-                  <img style={{width: '100%'}} src={image.image} />
+                  <img alt="portfolio_imgs" style={{width: '100%'}} src={image.image} />
 
                   <Card.Header
                     style={{
@@ -569,6 +569,7 @@ export default function Gallery() {
                   }}
                 >
                   <img
+                    alt="popover_imgs"
                     src={theImage.image}
                     style={{ width: "auto", height: 'intrinsic', maxHeight: '100%', maxWidth: '100%' }}
                     className='popCard'

@@ -19,7 +19,6 @@ export default function Bio() {
         className="bioHeader"
         style={{
           textAlign: "center",
-          marginBottom: "10px",
           width: "20%",
           height: "40px",
           backgroundColor: "rgba(41, 44, 49, 0.9)",
@@ -34,7 +33,6 @@ export default function Bio() {
       </div>
       <div
         style={{
-          marginBottom: "10px",
           width: "92%",
           padding: "20px",
           backgroundColor: "rgba(41, 44, 49, 0.5)",
@@ -78,7 +76,6 @@ export default function Bio() {
         className="awardsHeader"
         style={{
           textAlign: "center",
-          marginBottom: "10px",
           width: "40%",
           height: "40px",
           backgroundColor: "rgba(41, 44, 49, 0.9)",
@@ -87,7 +84,6 @@ export default function Bio() {
           borderRadius: "20px",
           marginBottom: "20px",
           alignSelf: "flex-start",
-          textAlign: "center",
           "@media (max-width: 992px)": {
             height: "80px",
           },
@@ -97,7 +93,6 @@ export default function Bio() {
       </div>
       <div
         style={{
-          marginBottom: "10px",
           width: "82%",
           padding: "20px",
           backgroundColor: "rgba(41, 44, 49, 0.5)",
@@ -115,8 +110,11 @@ export default function Bio() {
           <br />
           <br />
           <span className="lines" />
-          <span className="years">2022</span>- American Watercolor Society 155th
-          Annual International Exhibition NYC
+          <span className="years">2022</span>
+          - Las Olas Capital Arts, Solo Exhibition
+          <br />
+          <br />
+          - American Watercolor Society 155th Annual International Exhibition NYC
           <br />
           Bud &Gretchen Marble Medal
           <br />
