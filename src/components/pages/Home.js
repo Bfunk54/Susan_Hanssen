@@ -4,6 +4,7 @@ import "./Home.css";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
 import img10 from "../img/gallery/10.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const techIconStyle = {
   padding: "5px",
@@ -39,7 +40,7 @@ export default function Home() {
                   bg="transparent"
                   style={{ cursor: "pointer", border: "none"}}
                 >
-                  <img style={{ width: '100%' }} src={image.image} />
+                  <LazyLoadImage style={{ width: '100%' }} src={image.image} />
 
                   {/* <Card.Header
                     style={{

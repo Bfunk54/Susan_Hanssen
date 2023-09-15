@@ -45,6 +45,7 @@ import Typography from "@mui/material/Typography";
 import { styled } from "@mui/system";
 import useTheme from "@mui/material/styles/useTheme";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import "./Home.css";
 import "./Gallery.css";
 
@@ -432,12 +433,16 @@ export default function Gallery() {
           </div>
           <div
             className="row"
-            style={{ display: "flex", justifyContent: "center", alignItems: 'flex-start' }}
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "flex-start",
+            }}
           >
             {images.map((image) => (
               <div
                 key={image.id}
-                style={{ marginBottom: 26, alignItems: 'flex-start' }}
+                style={{ marginBottom: 26, alignItems: "flex-start" }}
                 className="col-md-6 col-lg-4 project-sidebar-card"
               >
                 <Card
@@ -446,7 +451,11 @@ export default function Gallery() {
                   bg="transparent"
                   style={{ cursor: "pointer", border: "none" }}
                 >
-                  <img alt="portfolio_imgs" style={{width: '100%'}} src={image.image} />
+                  <LazyLoadImage
+                    alt="portfolio_imgs"
+                    style={{ width: "100%" }}
+                    src={image.image} // use normal <img> attributes as props
+                  />
 
                   <Card.Header
                     style={{
@@ -476,7 +485,7 @@ export default function Gallery() {
               anchorEl={anchorEl}
               onClose={handleClose}
               anchorReference={"none"}
-              className='pop'
+              className="pop"
               BackdropProps={{
                 style: {
                   backgroundColor: "rgba(38, 38, 38, 0.98)",
@@ -491,7 +500,14 @@ export default function Gallery() {
                 height: "100vh",
               }}
             >
-              <div style={{ height: "100vh", display:'flex', flexDirection: 'column', alignItems: 'center' }}>
+              <div
+                style={{
+                  height: "100vh",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
                 {/* Close Icon */}
                 <Button
                   sx={{
@@ -502,7 +518,7 @@ export default function Gallery() {
                     right: "5px",
                     top: "5px",
                     position: "absolute",
-                    color:' rgb(178, 178, 178, 0.65)',
+                    color: " rgb(178, 178, 178, 0.65)",
                   }}
                   onClick={handleClose}
                 >
@@ -510,7 +526,7 @@ export default function Gallery() {
                 </Button>
                 {!isMobile ? (
                   <NextButtons
-                  className="prevBtn"
+                    className="prevBtn"
                     sx={{
                       marginRight: 3,
                       height: 38.5,
@@ -523,11 +539,10 @@ export default function Gallery() {
                     onClick={(event) => handlePreviousClick(event, theImage)}
                   >
                     <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
-                    
                   </NextButtons>
                 ) : (
                   <NextButtons
-                  className="nextBtn"
+                    className="nextBtn"
                     sx={{
                       marginRight: 3,
                       position: "absolute",
@@ -539,11 +554,10 @@ export default function Gallery() {
                     onClick={(event) => handlePreviousClick(event, theImage)}
                   >
                     <ArrowBackIosNewIcon fontSize="small"></ArrowBackIosNewIcon>
-                    
                   </NextButtons>
                 )}
                 <NextButtons
-                className="nextBtn"
+                  className="nextBtn"
                   sx={{
                     marginLeft: 3,
                     height: 38.5,
@@ -554,7 +568,6 @@ export default function Gallery() {
                   }}
                   onClick={(event) => handleNextClick(event, theImage)}
                 >
-                  
                   <ArrowForwardIosIcon fontSize="small"></ArrowForwardIosIcon>
                 </NextButtons>
                 <div
@@ -571,8 +584,13 @@ export default function Gallery() {
                   <img
                     alt="popover_imgs"
                     src={theImage.image}
-                    style={{ width: "auto", height: 'intrinsic', maxHeight: '100%', maxWidth: '100%' }}
-                    className='popCard'
+                    style={{
+                      width: "auto",
+                      height: "intrinsic",
+                      maxHeight: "100%",
+                      maxWidth: "100%",
+                    }}
+                    className="popCard"
                   />
                 </div>
                 <div className="popInfo">
