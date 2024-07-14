@@ -348,7 +348,6 @@ export default function Gallery() {
   const [prevBtn, setPrevBtn] = useState();
   const [index, setIndex] = useState();
   const open = Boolean(anchorEl);
-
   function handleImageClick(event, image) {
     setIndex(images.indexOf(image));
     const imageIndex = images.indexOf(image);
