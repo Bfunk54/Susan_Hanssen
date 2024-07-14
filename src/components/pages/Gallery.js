@@ -10,11 +10,12 @@ import img8 from "../img/gallery/8.png";
 import img9 from "../img/gallery/9.jpg";
 import img10 from "../img/gallery/10.jpg";
 import img11 from "../img/gallery/11.jpeg";
+import img11_1 from "../img/gallery/11_1.jpeg";
+import img11_2 from "../img/gallery/11_2.jpeg";
 import img12 from "../img/gallery/12.jpg";
 import img13 from "../img/gallery/13.jpg";
 import img14 from "../img/gallery/14.jpg";
 import img15 from "../img/gallery/15.jpg";
-import img16 from "../img/gallery/16.jpeg";
 import img17 from "../img/gallery/17.png";
 import img18 from "../img/gallery/18.jpg";
 import img19 from "../img/gallery/19.jpg";
@@ -23,7 +24,7 @@ import img21 from "../img/gallery/21.jpg";
 import img22 from "../img/gallery/22.jpg";
 import img23 from "../img/gallery/23.jpg";
 import img24 from "../img/gallery/24.jpg";
-import img25 from "../img/gallery/25.jpg";
+import img25 from "../img/gallery/25.jpeg";
 import img26 from "../img/gallery/26.webp";
 import img27 from "../img/gallery/27.webp";
 import img28 from "../img/gallery/28.jpg";
@@ -140,6 +141,22 @@ export default function Gallery() {
       sold: "",
     },
     {
+      id: 11_1,
+      image: img11_1,
+      title: "Waiting for the Moment",
+      size: "20x16",
+      mode: "Watercolor",
+      sold: "",
+    },
+    {
+      id: 11_2,
+      image: img11_2,
+      title: "A Bird in Hand",
+      size: "20x16",
+      mode: "Watercolor",
+      sold: "",
+    },
+    {
       id: 12,
       image: img12,
       title: "The Disguise",
@@ -169,14 +186,6 @@ export default function Gallery() {
       title: "The Unfamiliar Walk",
       size: "36x48",
       mode: "Acrylic on Canvas",
-      sold: "",
-    },
-    {
-      id: 16,
-      image: img16,
-      title: "Rush",
-      size: "18x26",
-      mode: "Watercolor/Gouache on Gold Gesso",
       sold: "",
     },
     {
@@ -246,7 +255,7 @@ export default function Gallery() {
     {
       id: 25,
       image: img25,
-      title: "Rebecca",
+      title: "Solo Act",
       size: "28x37",
       mode: "Acrylic on Canvas",
       sold: "SOLD",
